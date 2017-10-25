@@ -3,10 +3,10 @@ java krpc landing script using a PID system
 
 This project uses a PID class to control the landing system like SpaceX Falcon-9.
 
-Generic PID Controller Class Based on the PID recipe at :
-    http://code.activestate.com/recipes/577231-discrete-pid-controller/
-and the code and discussions in the blog at:
-    http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+Generic PID Controller Class Based on the PID recipe at:<p>
+http://code.activestate.com/recipes/577231-discrete-pid-controller/<p>
+and the code and discussions in the blog at:<p>
+http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/<p>
 
 An instance is created with the format your_pid=PID(P=.0001, I=0.00001, D=0.000001)
 Finding the right values for those three gain numbers is called 'tuning' and that's beyond the scope of this doc string!  
@@ -23,9 +23,9 @@ Obviously it's just an incipient part of the job. Falcon-9 routines are much mor
 Clone the project and copy the .craft file in the "saves/<your-save>/Ships/VAB" folder.
 
 
-Compiling 
+# Compiling 
 $ javac -d bin -cp lib/krpc-java-0.3.11.jar:lib/protobuf-java-3.4.0.jar:lib/javatuples-1.2.jar:lib/commons-math3-3.6.1.jar -verbose src/TesteSuicideBurnFull.java src/PID.java
 
-Executing
+# Executing
 $ java -cp bin:lib/krpc-java-0.3.11.jar:lib/protobuf-java-3.4.0.jar:lib/javatuples-1.2.jar:lib/commons-math3-3.6.1.jar TesteSuicideBurnFull
 
